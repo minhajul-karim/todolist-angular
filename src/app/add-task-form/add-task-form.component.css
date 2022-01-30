@@ -1,0 +1,22 @@
+.add-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.task-field,
+.task-btn {
+    padding: 1em;
+    font-size: 1rem;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+.task-btn {
+    margin-left: 1em;
+    background-color: #2980b9;
+    color: #fff;
+    font-weight: bold;
+    border: 0;
+}
