@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-interface Task {
+export interface Task {
   name: string;
   isDone: boolean;
 }
