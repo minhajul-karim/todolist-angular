@@ -14,7 +14,7 @@ export class AddTaskFormComponent implements OnInit {
   ) {}
 
   addTaskForm = this.formBuilder.group({
-    task: '',
+    name: '',
   });
 
   ngOnInit(): void {}

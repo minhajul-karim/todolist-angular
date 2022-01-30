@@ -6,13 +6,12 @@ export interface Task {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class TodoService {
-
   tasks: Task[] = [];
 
-  constructor() { }
+  constructor() {}
 
   addTask(task: Task) {
     this.tasks.push(task);

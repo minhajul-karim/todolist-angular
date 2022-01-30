@@ -1,4 +1,9 @@
 <form [formGroup]="addTaskForm" class="add-form" (ngSubmit)="addTask()">
-  <input type="text" placeholder="Write task name" class="task-field" formControlName="task" />
+  <input
+    type="text"
+    placeholder="Write task name"
+    class="task-field"
+    formControlName="name"
+  />
   <button class="task-btn">Add</button>
 </form>

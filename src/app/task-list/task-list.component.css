@@ -6,7 +6,8 @@
 }
 
 .task-name-container {
-  width: 300px;
+  max-width: 300px;
+  margin-right: 1em;
 }
 
 .task-list-btn-container button {
