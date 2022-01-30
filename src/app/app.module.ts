@@ -6,9 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AddTaskFormComponent } from './add-task-form/add-task-form.component';
+import { TaskListComponent } from './task-list/task-list.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, AddTaskFormComponent],
+  declarations: [AppComponent, HeaderComponent, AddTaskFormComponent, TaskListComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [FormBuilder],
   bootstrap: [AppComponent],

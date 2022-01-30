@@ -1,0 +1,19 @@
+.task-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.task-name-container {
+  width: 300px;
+}
+
+.task-list-btn-container button {
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.btn-remove {
+  margin-left: 1em;
+}
