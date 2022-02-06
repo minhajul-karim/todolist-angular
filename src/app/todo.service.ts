@@ -20,4 +20,12 @@ export class TodoService {
   getTasks(): Task[] {
     return this.tasks;
   }
+
+  markAsDone(index: number) {
+    const doneTaskIndex = this.tasks.findIndex((t, i) => index === i);
+    if (doneTaskIndex > -1) {
+      const curStatus = this.tasks[doneTaskIndex].isDone;
+      this.tasks[doneTaskIndex].isDone = !curStatus;
+    }
+  }
 }

@@ -1,11 +1,11 @@
-<section *ngFor="let task of tasks" class="task-list-container">
+<section *ngFor="let task of tasks; let i = index" class="task-list-container">
   <div class="task-name-container">
-    <p>
+    <p [ngStyle]="{'text-decoration': task.isDone ? 'line-through' : 'none'}">
       {{task.name}}
     </p>
   </div>
   <div class="task-list-btn-container">
-    <button class="btn-ok">✔️</button>
+    <button (click)="markAsDone(i)" class="btn-ok">✔️</button>
     <button class="btn-remove">❌</button>
   </div>
 </section>
