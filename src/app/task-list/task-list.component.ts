@@ -15,7 +15,10 @@ export class TaskListComponent implements OnInit {
   ngOnInit(): void {}
 
   markAsDone(index: number) {
-    this.todoService.markAsDone(index);
-    this.tasks = this.todoService.getTasks();
+    this.tasks = this.todoService.markAsDone(index);
+  }
+  
+  removeTask(index: number) {
+    this.tasks = this.todoService.removeTask(index);
   }
 }
